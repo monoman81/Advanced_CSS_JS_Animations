@@ -1,0 +1,64 @@
+button {
+	height: 90px;
+	width: 290px;
+	font-size: 28px;
+	color: white;
+	border: none;
+	background-color: blue;
+	/*transition-property: background-color color width;*/
+	/*transition-property: all;*/
+	/*transition-duration: 3000ms;*/
+	/*transition-delay: 2s;*/
+	transition: background-color 3s ease-in-out 1s, color 2s ease 4s, border-radius 4s ease-out 6s;
+}
+
+button:hover {
+	background-color: green;
+	color: black;
+	border-radius: 50%;
+	/*width: 600px;*/
+}
+
+.container {
+	width: 960px;
+	margin-top: 2em;
+}
+
+.move {
+	margin: 2em;
+	width: 150px;
+	height: 50px;
+	padding: 10px 15px;
+	background-color: red;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 0.5em;
+	font-size: 20px;
+	transition-property: transform;
+	transition-duration: 3s;
+}
+
+#ease {
+	transition-timing-function: ease;
+}
+
+#linear {
+	transition-timing-function: linear;
+}
+
+#ease-in {
+	transition-timing-function: ease-in;
+}
+
+#ease-out {
+	transition-timing-function: ease-out;
+}
+
+#ease-in-out {
+	transition-timing-function: ease-in-out;
+}
+
+.move:hover {
+	transform: translate(900px, 0);
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        body {
+            perspective: 500px;
+        }
+
+        img {
+            width: 300px;
+            display: block;
+            margin: 200px auto auto;
+            transition: transform 2s;
+        }
+
+        /*#img1 {*/
+        /*    transform-origin: 30% 80%;*/
+        /*}*/
+
+        img:hover {
+            /*transform: translate(500px,200px);*/
+            /*transform: scale(2);*/
+            /*transform: rotate(360deg);*/
+            /*transform: skew(-10deg, 20deg);*/
+            /*transform: translateZ(800px);*/
+            transform: rotateY(60deg);
+        }
+
+    </style>
+</head>
+<body>
+
+    <img src="cat.jpg" alt="">
+    <!--img id="img1" src="cat.jpg" alt=""-->
+
+</body>
+</html>
