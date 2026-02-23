@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    background-color: #212121;
+}
+
+.fig {
+    width: 500px;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fig img {
+    width: 100%;
+    transition: all .5s;
+}
+
+.fig::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #006266;
+    opacity: .5;
+    transform: translateY(100%);
+    transition: all .25s;
+    transition-delay: .25s;
+}
+
+.fig:hover::before {
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all .25s;
+    transition-delay: 0s;
+}
+
+.fig:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .3s;
+}
+
+.caption h3,
+.caption h5 {
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.caption h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.caption h5 {
+    background-color: #ae895d;
+    padding: 3px 5px;
+    text-transform: capitalize;
+}
