@@ -1,7 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4b4b4b;
+    font-family: "Lato", sans-serif;
+    background-color: #272727;
+}
+
+.container {
+    width: 450px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 205%;
+    background-color: #2d3436;
+    opacity: .8;
+    transition: all .25s;
+    transform: translate(550px, 300px) rotate(45deg);
+}
+
+.container:hover::before {
+    transform: translate(-50px, -150px) rotate(45deg);
+}
+
+img {
+    width: 100%;
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    font-size: 17px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(0 0 0 / .8);
+    transform: translate(250px, -200px);
+    transition: all .25s;
+}
+
+.container:hover h2 {
+    transform: translate(0, 0);
+    transition-delay: .3s;
+}
+
+p {
+    font-size: 16px;
+    width: 80%;
+    align-self: center;
+    text-align: center;
+    transition: all .25s;
+    transform: translate(-200px, 200px);
+}
+
+.container:hover p {
+    transform: translate(0, 0);
+    transition-delay: .4s;
+}
+
+a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    width: 100px;
+    padding: 15px;
+    margin-bottom: 20px;
+    align-self: center;
+    transition: all .25s;
+    transform: translateY(100px);
+}
+
+.container:hover a {
+    transform: translateY(0);
+    transition-delay: .5s;
 }

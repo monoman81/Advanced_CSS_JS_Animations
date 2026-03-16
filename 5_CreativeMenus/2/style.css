@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+ul li a {
+    color: #272727;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 0 10px;
+    position: relative;
+    transition: all .5s;
+}
+
+a:hover {
+    background-color: #e91e63;
+    color: #fff;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border-width: 0 0 3px 3px;
+    border-style: solid;
+    border-color : #e91e63;
+    opacity: 0;
+    transition: all .3s;
+}
+
+a:hover::before {
+    opacity: 1;
+    bottom: -8px;
+    left: -8px;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    border-width: 3px 3px 0 0;
+    border-style: solid;
+    border-color : #e91e63;
+    opacity: 0;
+    transition: all .3s;
+}
+
+a:hover::after {
+    opacity: 1;
+    top: -8px;
+    right: -8px;
+}
