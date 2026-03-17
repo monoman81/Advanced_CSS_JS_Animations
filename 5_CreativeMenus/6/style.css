@@ -49,12 +49,12 @@ ul li a span {
 
 a:hover span:nth-child(1) {
     transform: translateY(-100%);
-    transition-delay: 0;
+    transition-delay: 0s;
 }
 
 a:hover span:nth-child(2) {
     transform: translateY(-100%);
-    transition-delay: 0;
+    transition-delay: 0s;
 }
 
 a::before {

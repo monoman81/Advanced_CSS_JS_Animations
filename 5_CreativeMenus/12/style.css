@@ -38,7 +38,7 @@ a::before {
     color: #00ade1;
     border-right: 8px solid #00ade1;
     -webkit-text-stroke: 1px #00ade1;
-    width: 0%;
+    width: 0;
     overflow: hidden;
     transition: all 1s;
 }
