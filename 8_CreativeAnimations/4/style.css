@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea2027;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+span::before {
+    content: "TRANSITIONS";
+    text-transform: uppercase;
+    font-family: Arial, serif;
+    color: #1b1464;
+    animation: word-switch 5s linear infinite;
+}
+
+@keyframes word-switch {
+    0% {
+        content: "transitions";
+    }
+    50% {
+        content: "animations";
+    }
+    100% {
+        content: "transforms";
+    }
+}
