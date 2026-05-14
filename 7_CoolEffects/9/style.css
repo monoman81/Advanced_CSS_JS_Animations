@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 24vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+}
+
+section:nth-child(1) h2 {
+    background-image: url("1.webp");
+    background-size: cover;
+}
+
+section:nth-child(2) h2 {
+    background-image: url("2.jpg");
+    background-size: cover;
+}
+
+section:nth-child(3) h2 {
+    background-image: url("3.webp");
+    background-size: cover;
+}
+
+section:nth-child(4) h2 {
+    background-image: url("4.jpg");
+    background-size: cover;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    text-decoration: none;
+    color: #000;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
