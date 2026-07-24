@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+.card {
+    width: 500px;
+    height: 250px;
+    background-color: #c7ecee;
+    padding: 20px 80px 20px 20px;
+    border-radius: 10px;
+    transition: all .5s;
+    clip-path: circle(7.1% at 93% 20%);
+}
+
+.card:hover {
+    clip-path: circle(70.7% at 50% 50%);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+
+

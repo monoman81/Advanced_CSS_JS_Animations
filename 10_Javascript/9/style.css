@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scene {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(#a6d8ff, #fff, #fff);
+}
+
+.sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 100px;
+    left: 55%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 50px #fff;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    bottom: 0;
+    background: url("bg.png") repeat-x;
+    background-size: 1500px;
+    animation: animateBg 25s linear infinite;
+}
+
+@keyframes animateBg {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1500px;
+    }
+}
+
+.car1 {
+    position: absolute;
+    bottom: 20px;
+    max-width: 200px;
+    z-index: 1;
+    left: -200px;
+    animation: animateCar1 18s linear infinite;
+}
+
+.car2 {
+    position: absolute;
+    bottom: 50px;
+    max-width: 200px;
+    right: -200px;
+    animation: animateCar2 12s linear infinite;
+}
+
+@keyframes animateCar1 {
+    0% {
+        transform: translateX(0);
+    }
+    90%, 100% {
+        transform: translateX(calc(100vw + 200px));
+    }
+}
+
+@keyframes animateCar2 {
+    0% {
+        transform: translateX(0) rotateY(180deg);
+    }
+    90%, 100% {
+        transform: translateX(calc(-100vw - 200px)) rotateY(180deg);
+    }
+}
+
+.scene.night {
+    background: #222833;
+}
+
+.scene.night .sun {
+    left: 45%;
+    box-shadow: 0 0 0 #fff;
+}
+
+.scene.night .sun::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #222833;
+    border-radius: 50%;
+}
